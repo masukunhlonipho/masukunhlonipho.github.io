@@ -65,6 +65,10 @@ h2 {
     gap: 20px;
 }
 
+.project:hover{
+    transform: scale(1.1);
+}
+
 .skill, .project {
     background: #fff;
     padding: 20px;
