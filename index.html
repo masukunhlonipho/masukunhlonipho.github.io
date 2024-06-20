@@ -3,51 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nhlonipho Masuku</title>
+    <title>Masuku Nhlonipho - Personal Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header>
-        Masuku Nhlonipho
-    </header>
-    
+<header>
     <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I'm a dedicated and ambitious BSc (H) Computer Science student with a strong foundation in programming languages, algorithms, and data structures. I am eager to engage in software development, collaborate with teams to design innovative solutions, and enhance my skills in problem-solving and analyzing complex systems to provide efficient and user-friendly software experiences. I am seeking opportunities to learn, apply my technical expertise, and contribute to the success of a dynamic organization in a computer science role.</p>
-        </section>
-    
-        <section id="skills">
-            <h2>Skills</h2>
+        <h1>Masuku Nhlonipho</h1>
+        <nav>
             <ul>
-                <li>Programming Languages: Python, Java, C++</li>
-                <li>Web Development: HTML, CSS, JavaScript</li>
-                <li>Data Structures and Algorithms</li>
-                <li>Database Management: SQL, MongoDB</li>
-                <li>Version Control: Git, GitHub</li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </section>
-    
-        <section id="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li><strong>Project 1:</strong> <a href="#">Description and link to project</a></li>
-                <li><strong>Project 2:</strong> <a href="#">Description and link to project</a></li>
-                <li><strong>Project 3:</strong> <a href="#">Description and link to project</a></li>
-            </ul>
-        </section>
-    
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:masukunhlonipho@gmail.com">My Email</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/your-profile">linkedin.com/in/your-profile</a></p>
-            <p>GitHub: <a href="https://github.com/masukunhlonipho">My GitHub</a></p>
-        </section>
+        </nav>
     </div>
-    
-    <footer>
-        &copy; 2024 Masuku Nhlonipho. All rights reserved.
-    </footer>
-    
-    </body></html>
+</header>
+
+<div class="container">
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a dedicated and ambitious BSc (H) Computer Science student with a strong foundation in programming languages, algorithms, and data structures. I am eager to engage in software development, collaborate with teams to design innovative solutions, and enhance my skills in problem-solving and analyzing complex systems to provide efficient and user-friendly software experiences. I am seeking opportunities to learn, apply my technical expertise, and contribute to the success of a dynamic organization in a computer science role.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming Languages: Python, Java, C++</li>
+            <li>Web Development: HTML, CSS, JavaScript</li>
+            <li>Data Structures and Algorithms</li>
+            <li>Database Management: SQL, MongoDB</li>
+            <li>Version Control: Git, GitHub</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Project 1:</strong> <a href="#">Description and link to project</a></li>
+            <li><strong>Project 2:</strong> <a href="#">Description and link to project</a></li>
+            <li><strong>Project 3:</strong> <a href="#">Description and link to project</a></li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/your-profile">linkedin.com/in/your-profile</a></p>
+        <p>GitHub: <a href="https://github.com/your-username">github.com/your-username</a></p>
+    </section>
+</div>
+
+<footer>
+    &copy; 2024 Masuku Nhlonipho. All rights reserved.
+</footer>
+
+<script>
+    // JavaScript to enhance interactivity
+    document.addEventListener('DOMContentLoaded', function() {
+        const links = document.querySelectorAll('nav ul li a');
+        links.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                window.scrollTo({
+                    top: target.offsetTop,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
