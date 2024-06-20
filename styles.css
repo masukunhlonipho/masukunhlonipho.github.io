@@ -65,10 +65,6 @@ h2 {
     gap: 20px;
 }
 
-.project:hover{
-    transform: scale(1.1);
-}
-
 .skill, .project {
     background: #fff;
     padding: 20px;
@@ -98,7 +94,7 @@ h2 {
     transition: transform 0.2s;
 }
 
-.social-link:hover {
+.social-link:hover,.project:hover {
     transform: scale(1.1);
 }
 
