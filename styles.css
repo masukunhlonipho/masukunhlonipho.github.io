@@ -75,12 +75,12 @@ nav a:hover {
         top: 60px;
         right: 0;
         background-color: #333;
-        width: 100px; /*option menu background width*/
+        max-width: max-content; /*option menu background width*/
         text-align: center;
     }
     
     .nav-links a {
-        margin: 10px 0;
+        margin: 10px 10px 10px 10px;
     }
     
     .nav-links.active {
