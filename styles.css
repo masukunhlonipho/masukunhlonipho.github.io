@@ -31,15 +31,56 @@ header h1 {
     font-size: 2em;
 }
 
-header nav a {
+nav{
+    position: relative;
+}
+
+nav a{
     color: #fff;
     text-decoration: none;
     margin: 0 15px;
     font-size: 1.2em;
 }
 
-header nav a:hover {
-    text-decoration: underline;
+nav a:hover{
+    transform: scale(1.0);
+}
+
+.hamburger span {
+    background-color: #fff;
+    height: 3px;
+    margin: 5px;
+    width: 25px;
+    transition: all 0.3s;
+}
+
+.nav-links {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+    
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .nav-links a {
+        margin: 10px 0;
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
 }
 
 .container {

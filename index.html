@@ -8,19 +8,26 @@
 </head>
 <body>
 
-<header>
-    <div class="container">
-        <h1>Masuku Nhlonipho</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#socials">Socials</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </div>
-</header>
-
+    <header>
+        <div class="container">
+            <h1>Masuku Nhlonipho</h1>
+            <nav>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="nav-links" id="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#socials">Socials</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
 <div class="container">
     <section id="about">
         <h2>About Me</h2>
@@ -122,6 +129,9 @@
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const links = document.querySelectorAll('nav a');
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
         links.forEach(link => {
             link.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -130,7 +140,14 @@
                     top: target.offsetTop - 50, // Adjusted for sticky header
                     behavior: 'smooth'
                 });
+                if (window.innerWidth <= 768) {
+                    navLinks.classList.remove('active');
+                }
             });
+        });
+
+        hamburger.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
         });
     });
 </script>
