@@ -1,11 +1,4 @@
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
+/* General styles for header and nav */
 header {
     background-color: #333;
     color: #fff;
@@ -31,19 +24,30 @@ header h1 {
     font-size: 2em;
 }
 
-nav{
+nav {
     position: relative;
 }
 
-nav a{
+nav a {
     color: #fff;
     text-decoration: none;
     margin: 0 15px;
     font-size: 1.2em;
 }
 
-nav a:hover{
-    transform: scale(1.0);
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
 }
 
 .hamburger span {
@@ -53,21 +57,17 @@ nav a:hover{
     margin: 3px 0;
     transition: all 0.3s;
 }
+
+/* Navigation Links */
 .nav-links {
     display: flex;
 }
 
 @media (max-width: 768px) {
     .hamburger {
-        display: none;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        width: 30px;
-        height: 30px;
+        display: flex;
     }
-        
+    
     .nav-links {
         display: none;
         flex-direction: column;
@@ -88,47 +88,36 @@ nav a:hover{
     }
 }
 
+/* Container Styles */
 .container {
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
     padding: 20px;
 }
 
+/* Section Styles */
 section {
-    padding: 40px 0;
-    border-bottom: 1px solid #ddd;
+    margin-bottom: 50px;
 }
 
-h2 {
-    color: #333;
+section h2 {
     font-size: 2em;
     margin-bottom: 20px;
-}
-
-.skills-grid, .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-}
-
-.skill, .project {
-    background: #fff;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.skill h3, .project h3 {
-    margin-top: 0;
     color: #4CAF50;
 }
 
-.socials-grid {
+.skills-grid, .projects-grid, .socials-grid {
     display: flex;
-    justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+}
+
+.skill, .project, .social-link {
+    flex: 1 1 calc(33.333% - 20px);
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .social-link {
@@ -140,7 +129,7 @@ h2 {
     transition: transform 0.2s;
 }
 
-.social-link:hover,.project:hover {
+.social-link:hover {
     transform: scale(1.1);
 }
 
@@ -157,10 +146,10 @@ h2 {
 
 footer {
     background-color: #333;
-    color: white;
+    color: #fff;
     text-align: center;
-    padding: 20px 0;
-    position: relative;
+    padding: 10px 0;
+    position: absolute;
     bottom: 0;
     width: 100%;
 }
