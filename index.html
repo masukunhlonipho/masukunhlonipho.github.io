@@ -1,157 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Masuku Nhlonipho - Personal Website</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-    <header>
-        <div class="container">
-            <h1>Masuku Nhlonipho</h1>
-            <nav>
-                <div class="hamburger" id="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="nav-links" id="nav-links">
-                    <a href="#about">About</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#socials">Socials</a>
-                    <a href="#contact">Contact</a>
-                </div>
-            </nav>
-        </div>
-    </header>
-    
-<div class="container">
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm a dedicated and ambitious BSc (H) Computer Science student with a strong foundation in programming languages, algorithms, and data structures. I am eager to engage in software development, collaborate with teams to design innovative solutions, and enhance my skills in problem-solving and analyzing complex systems to provide efficient and user-friendly software experiences. I am seeking opportunities to learn, apply my technical expertise, and contribute to the success of a dynamic organization in a computer science role.</p>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div class="skill">
-                <h3>Programming Languages</h3>
-                <p>Python, Java, C++</p>
-            </div>
-            <div class="skill">
-                <h3>Machine Learning</h3>
-                <p>Models</p>
-            </div>
-            <div class="skill">
-                <h3>Web Development</h3>
-                <p>HTML, CSS, JavaScript</p>
-            </div>
-            <div class="skill">
-                <h3>App Development</h3>
-                <p>Android Studio - Flutter, React.js, DApp</p>
-            </div>
-            <div class="skill">
-                <h3>Data Structures and Algorithms</h3>
-            </div>
-            <div class="skill">
-                <h3>Database Management</h3>
-                <p>SQL, mysql</p>
-            </div>
-            <div class="skill">
-                <h3>Version Control</h3>
-                <p>Git, GitHub</p>
-            </div>
-            <div class="skill">
-                <h3>Computer Networks</h3>
-                <p>Networking</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-            <div class="project">
-                <h3>Project 1</h3>
-                <p><a href="#">Description and link to project</a></p>
-            </div>
-            <div class="project">
-                <h3>Project 2</h3>
-                <p><a href="#">Description and link to project</a></p>
-            </div>
-            <div class="project">
-                <h3>Project 3</h3>
-                <p><a href="#">Description and link to project</a></p>
-            </div>
-        </div>
-    </section>
-
-    <section id="socials">
-        <h2>Socials</h2>
-        <div class="socials-grid">
-            <a href="https://www.linkedin.com/in/your-profile" target="_blank" class="social-link">
-                <img src="images/linkedin-icon.png" alt="LinkedIn">
-                <span>LinkedIn</span>
-            </a>
-            <a href="https://github.com/your-username" target="_blank" class="social-link">
-                <img src="images/github-icon.png" alt="GitHub">
-                <span>GitHub</span>
-            </a>
-            <a href="https://twitter.com/your-profile" target="_blank" class="social-link">
-                <img src="images/twitter-icon.png" alt="Twitter">
-                <span>Twitter</span>
-            </a>
-            <a href="https://facebook.com/nhlonipho.masuku.58" target="_blank" class="social-link">
-                <img src="images/facebook-icon.png" alt="Facebook">
-                <span>Facebook</span>
-            </a>            
-            <a href="https://instagram.com/your-profile" target="_blank" class="social-link">
-                <img src="images/instagram-icon.png" alt="Instagram">
-                <span>Instagram</span>
-            </a>
-        </div>
-    </section>    
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:masukunhlonipho@gmail.com">My Email</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/nhlonipho-masuku-462a87214">My LinkedIn Profile</a></p>
-        <p>GitHub: <a href="https://github.com/masukunhlonipho">My GitHub Profile</a></p>
-    </section>
-</div>
-
-<footer>
-    &copy; 2024 Masuku Nhlonipho. All rights reserved.
-</footer>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const links = document.querySelectorAll('nav a');
-        const hamburger = document.getElementById('hamburger');
-        const navLinks = document.getElementById('nav-links');
-
-        links.forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                window.scrollTo({
-                    top: target.offsetTop - 50, // Adjusted for sticky header
-                    behavior: 'smooth'
-                });
-                if (window.innerWidth <= 768) {
-                    navLinks.classList.remove('active');
-                }
+    <title>Nhlonipho Masuku</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="masukunhlonipho, Nhlonipho, Masuku, Nhlonipho Masuku, Computer Science Graduate, "/>
+    <script type="application/x-javascript"> 
+        addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); 
+        function hideURLbar(){ window.scrollTo(0,1); } 
+    </script>
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){		
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
             });
         });
-
-        hamburger.addEventListener('click', function() {
-            navLinks.classList.toggle('active');
+    </script>
+</head>
+<body>
+    <div class="header" id="head">	
+        <div class="container"> 
+            <div class="header-top">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+                </div>
+                <div class="top-menu">
+                    <span class="menu"> </span>
+                    <ul>
+                        <nav class="cl-effect-5">
+                            <li><a class="active" href="index.html"><span data-hover="Home">home</span></a></li>
+                            <li><a href="#about" class="scroll"><span data-hover="about">about</span></a></li>
+                            <li><a href="#work" class="scroll"><span data-hover="work">work</span></a></li>
+                            <li><a href="#services" class="scroll"><span data-hover="services">services</span></a></li>
+                            <li><a href="#contact" class="scroll"><span data-hover="contact">contact</span></a></li>
+                        </nav>
+                    </ul>
+                </div>
+                <script>
+                    $("span.menu").click(function(){
+                        $(".top-menu ul").slideToggle("slow" , function(){});
+                    });
+                </script>
+                <div class="clearfix"></div>  
+                <div class="index-banner">
+                    <div class="wmuSlider example1">
+                        <div class="wmuSliderWrapper">
+                            <article style="position: absolute; width: 100%; opacity: 0;"> 
+                                <div class="banner-wrap">
+                                    <div class="banner_center">
+                                        <h1>hello world,</h1> 
+                                        <h2>i am <span>graphic & web designer</span></h2>
+                                        <h2>from morocco</h2>
+                                    </div>
+                                </div>
+                            </article>
+                            <article style="position: relative; width: 100%; opacity: 1;"> 
+                                <div class="banner-wrap">
+                                    <div class="banner_center">
+                                        <h1>Content here,</h1> 
+                                        <h2>Lorem <span>graphic &  designer</span></h2>
+                                        <h2>Contrary</h2>
+                                    </div>
+                                </div>
+                            </article>
+                            <article style="position: absolute; width: 100%; opacity: 0;">
+                                <div class="banner-wrap">
+                                    <div class="banner_center">
+                                        <h1>Lorem Ipsum ,</h1> 
+                                        <h2>Contrary to <span>&  designer</span></h2>
+                                        <h2>reproduced below</h2>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <script src="js/jquery.wmuSlider.js"></script> 
+                <script>
+                    $('.example1').wmuSlider();         
+                </script> 	           	      
+            </div>
+        </div>     
+    </div>
+    <div class="content">
+        <div class="about-section" id="about">
+            <div class="container">
+                <div class="about-header">
+                    <h3>about</h3>
+                    <div class="about-imag">
+                        <img src="images/pic-9.jpg" alt=""/>
+                    </div>
+                    <div class="about-text">
+                        <p>I'm a dedicated and ambitious BSc (H) Computer Science student with a strong foundation in programming languages, algorithms, and data structures. I am eager to engage in software development, collaborate with teams to design innovative solutions, and enhance my skills in problem-solving and analyzing complex systems to provide efficient and user-friendly software experiences. I am seeking opportunities to learn, apply my technical expertise, and contribute to the success of a dynamic organization in a computer science role.</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="about-sectiongrids">
+                    <div class="col-md-6 about-leftgrid">
+                        <div class="polls">
+                            <div class="poll">
+                                <div class="poll-desc">
+                                    <h4>Data Structures & Algorithms</h4>
+                                </div>
+                                <div class="percentage">
+                                    <p>75%</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="skills">
+                                <div style="width:75%"> </div>
+                            </div>
+                        </div>
+                        <div class="polls">
+                            <div class="poll">
+                                <div class="poll-desc">
+                                    <h4>Programming Languages</h4>
+                                </div>
+                                <div class="percentage">
+                                    <p>75%</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="skills">
+                                <div style="width:75%"> </div>
+                            </div>
+                        </div>
+                        <div class="polls">
+                            <div class="poll">
+                                <div class="poll-desc">
+                                    <h4>Database Management</h4>
+                                </div>
+                                <div class="percentage">
+                                    <p>75%</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="skills">
+                                <div style="width:75%"> </div>
+                            </div>
+                        </div>
+                        <div class="polls">
+                            <div class="poll">
+                                <div class="poll-desc">
+                                    <h4>Networking</h4>
+                                </div>
+                                <div class="percentage">
+                                    <p>75%</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="skills">
+                                <div style="width:75%"> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 about-rightgrid">
+                        <div class="polls">
+                            <div class="poll">
+                                <div class="poll-desc">
+                                    <h4>HTML/CSS</h4>
+                                </div>
+                                <div class="percentage">
+                                    <p>75%</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="skills">
+                                <div style="width:75%"> </div>
+                            </div>
+                        </div>
+                        <div class="polls">
+                            <div class="poll">
+                                <div class="poll-desc">
+                                    <h4>App Development with Flutter</h4>
+                                </div>
+                                <div class="percentage">
+                                    <p>75%</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="skills">
+                                <div style="width:75%"> </div>
+                            </div>
+                        </div>
+                        <div class="polls">
+                            <div class="poll">
+                                <div class="poll-desc">
+                                    <h4>Video Editing</h4>
+                                </div>
+                                <div class="percentage">
+                                    <p>75%</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="skills">
+                                <div style="width:75%"> </div>
+                            </div>
+                        </div>
+                        <div class="polls">
+                            <div class="poll">
+                                <div class="poll-desc">
+                                    <h4>Software Development</h4>
+                                </div>
+                                <div class="percentage">
+                                    <p>75%</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="skills">
+                                <div style="width:75%"> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="arrow1">
+                    <a href="#work" class="scroll">
+                        <img src="images/arrow1.png" alt=""/>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="work-section" id="work">
+            <div class="container">
+                <h3>work</h3>
+                <div class="work-section-head text-center">
+                    <p>I have worked with a range of clients from various industries, offering innovative solutions and delivering high-quality projects. Below are some of my recent works:</p>
+                </div>
+                <div class="portfolio-grids">
+                    <div class="col-md-6 portfolio-grid">
+                        <div class="portfolio">
+                            <a href="project1.html"><img src="images/pic2.jpg" alt=""/></a>
+                            <div class="portfolio-desc">
+                                <h4>Project Title</h4>
+                                <p>Description of the project, what it entailed, and the technologies used.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 portfolio-grid">
+                        <div class="portfolio">
+                            <a href="project2.html"><img src="images/pic3.jpg" alt=""/></a>
+                            <div class="portfolio-desc">
+                                <h4>Project Title</h4>
+                                <p>Description of the project, what it entailed, and the technologies used.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="arrow1">
+                    <a href="#services" class="scroll">
+                        <img src="images/arrow1.png" alt=""/>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="service-section" id="services">
+            <div class="container">
+                <h3>services</h3>
+                <div class="services-grids">
+                    <div class="col-md-4 service-grid">
+                        <div class="service">
+                            <div class="service-icon">
+                                <img src="images/icon1.png" alt=""/>
+                            </div>
+                            <div class="service-desc">
+                                <h4>Web Development</h4>
+                                <p>Creating responsive and user-friendly websites using the latest technologies and best practices.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 service-grid">
+                        <div class="service">
+                            <div class="service-icon">
+                                <img src="images/icon2.png" alt=""/>
+                            </div>
+                            <div class="service-desc">
+                                <h4>Graphic Design</h4>
+                                <p>Designing visually appealing graphics for websites, social media, and print materials.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 service-grid">
+                        <div class="service">
+                            <div class="service-icon">
+                                <img src="images/icon3.png" alt=""/>
+                            </div>
+                            <div class="service-desc">
+                                <h4>App Development</h4>
+                                <p>Developing user-friendly mobile applications for both Android and iOS platforms.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="arrow1">
+                    <a href="#contact" class="scroll">
+                        <img src="images/arrow1.png" alt=""/>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="contact-section" id="contact">
+            <div class="container">
+                <h3>contact</h3>
+                <div class="contact-section-head text-center">
+                    <p>Feel free to reach out to me for any inquiries, collaborations, or just to say hello.</p>
+                </div>
+                <div class="contact-section-grids">
+                    <div class="col-md-6 contact-form">
+                        <form action="#" method="post">
+                            <input type="text" name="Name" placeholder="Name" required="">
+                            <input type="email" name="Email" placeholder="Email" required="">
+                            <textarea name="Message" placeholder="Message" required=""></textarea>
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                    <div class="col-md-6 contact-info">
+                        <div class="contact-address">
+                            <h4>Address</h4>
+                            <p>Chandan Vihar, West Sant Nagar, Burari, Delhi, India</p>
+                        </div>
+                        <div class="contact-phone">
+                            <h4>Phone</h4>
+                            <p><a phone="+91 9871542955">+91 9871542955</a></p>
+                        </div>
+                        <div class="contact-email">
+                            <h4>Email</h4>
+                            <p><a href="masukunhlonipho@gmail.com">masukunhlonipho@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="footer-left">
+                <p>© 2024 Nhlonipho Masuku. All Rights Reserved</p>
+            </div>
+            <div class="footer-right">
+                <ul>
+                    <li><a href="https://www.facebook.com/nhlonipho.masuku.58/" target="_blank">Facebook</a></li>
+                    <li><a href="https://x.com/NhloniphoMasuku" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.linkedin.com/in/nhlonipho-masuku-462a87214" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $().UItoTop({ easingType: 'easeOutQuart' });
         });
-    });
-</script>
-
+    </script>
+    <a href="#head" id="toTop" style="display: block;">
+        <span id="toTopHover" style="opacity: 1;"> </span>
+    </a>
 </body>
 </html>
