@@ -75,7 +75,7 @@ nav a:hover {
         top: 60px;
         right: 0;
         background-color: #333;
-        width: 100%;
+        width: 100px; /*option menu background width*/
         text-align: center;
     }
     
@@ -118,6 +118,7 @@ section h2 {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
 }
 
 .social-link {
