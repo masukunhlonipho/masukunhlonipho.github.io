@@ -6,6 +6,7 @@
  * Free to use under the GPLv2 license.
  * http://www.gnu.org/licenses/gpl-2.0.html
  *
+ * Contributing author: Tyler Smith (@mbmufffin)
  */
 /* Browser Resets */
 .flex-container a:active,
@@ -35,7 +36,7 @@ html[xmlns] .slides {display: block;}
 
 /* FlexSlider Default Theme
 *********************************/
-.flexslider {margin: 0 0 60px; background: 0; position: relative; -webkit-border-radius: 4px; -moz-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; zoom: 1;}
+.flexslider {margin: 0 0 60px; background: ; position: relative; -webkit-border-radius: 4px; -moz-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; ,0,0,.2); zoom: 1;}
 .flex-viewport {max-height:1500px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
 .loading .flex-viewport {max-height: 300px;}
 .flexslider .slides {zoom: 1;}
@@ -50,9 +51,9 @@ html[xmlns] .slides {display: block;}
 .flex-direction-nav .disabled {opacity: .3!important; filter:alpha(opacity=30); cursor: default;}
 
 /* Control Nav */
-.flex-control-nav {width: 0%; position: absolute; bottom: -49px; text-align: center;left: 69em;}
-.flex-control-nav li {margin: 0 6px; display:inline-block; zoom: 1; display: inline;padding:0.2em;}
-.flex-control-paging li a {width: 13px; height: 13px; display:inline-block;  background:#8D6B20 ; cursor: pointer; text-indent: -9999px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; box-shadow: inset 0 0 3px rgba(0,0,0,0.3); border:0;}
+.flex-control-nav {width: %; position: absolute; bottom: -49px; text-align: center;left: 69em;}
+.flex-control-nav li {margin: 0 6px; display:inline-block; zoom: 1; *display: inline;padding:0.2em;}
+.flex-control-paging li a {width: 13px; height: 13px; display:inline-block;  background:#8D6B20 ; cursor: pointer; text-indent: -9999px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; box-shadow: inset 0 0 3px rgba(0,0,0,0.3); border:;}
 .flex-control-paging li a:hover { background: #F3ECCE; }
 .flex-control-paging li a.flex-active { background: #F3ECCE; cursor: default; }
 
@@ -66,7 +67,7 @@ html[xmlns] .slides {display: block;}
 	
 }
 .flexslider1 ol.flex-control-nav{
-	width: 0;
+	width: ;
 	position: absolute;
 	bottom: -49px;
 	text-align: center;
@@ -101,5 +102,7 @@ html[xmlns] .slides {display: block;}
 .flex-control-nav {left: 5.5em;}
 .flexslider1 ol.flex-control-nav {bottom: 1px;left: 6em;}
 
+
+}
 
 }
