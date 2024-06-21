@@ -49,20 +49,25 @@ nav a:hover{
 .hamburger span {
     background-color: #fff;
     height: 3px;
-    margin: 5px;
     width: 25px;
+    margin: 3px 0;
     transition: all 0.3s;
 }
-
 .nav-links {
     display: flex;
 }
 
 @media (max-width: 768px) {
     .hamburger {
-        display: flex;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
     }
-    
+        
     .nav-links {
         display: none;
         flex-direction: column;
