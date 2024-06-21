@@ -58,6 +58,10 @@ nav a:hover {
     transition: all 0.3s;
 }
 
+.hamburger:hover{
+    transform: scale(1.1);
+}
+
 /* Navigation Links */
 .nav-links {
     display: flex;
