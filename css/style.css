@@ -644,16 +644,52 @@ h2.resp-accordion {
 	border: 2px solid #ef664d;
 	border-radius: 103px;
 }
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Your custom styles */
 .about-text {
-	float: left;
-	width: 65%;
-	margin-top:3%; 
+    width: 65%;
+    margin-top: 3%;
+    text-align: justify;
+    overflow: hidden;
 }
+
 .about-text p {
-	font-size: 15px;
-	color: #7e7e7e;
-	line-height: 1.5em;
+    font-size: 15px;
+    color: #7e7e7e;
+    line-height: 1.5em;
+    word-wrap: break-word;
+    margin: 0;
 }
+
+@media (max-width: 1024px) {
+    .about-text {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-text {
+        width: 90%;
+        margin-top: 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-text {
+        width: 95%;
+    }
+
+    .about-text p {
+        font-size: 14px;
+    }
+}
+
 .about-sectiongrids{
 	padding: 40px 0px;
 }
