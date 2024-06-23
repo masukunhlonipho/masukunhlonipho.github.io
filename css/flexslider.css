@@ -5,8 +5,6 @@
  * Copyright 2012 WooThemes
  * Free to use under the GPLv2 license.
  * http://www.gnu.org/licenses/gpl-2.0.html
- *
- * Contributing author: Tyler Smith (@mbmufffin)
  */
 /* Browser Resets */
 .flex-container a:active,
@@ -101,8 +99,5 @@ html[xmlns] .slides {display: block;}
 @media screen and (max-width: 320px) {
 .flex-control-nav {left: 5.5em;}
 .flexslider1 ol.flex-control-nav {bottom: 1px;left: 6em;}
-
-
-}
 
 }

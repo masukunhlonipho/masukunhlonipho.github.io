@@ -33,7 +33,7 @@ body{
 	
 }
 .header{
-	background: url("../images/banner.jpeg") no-repeat center top;
+	background: url("../images/banner") no-repeat center top;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -42,6 +42,35 @@ body{
 	background-size:cover;
 	min-height: 550px;
 }
+.header {
+    position: relative;
+    min-height: 550px;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Ensure the video is behind other content */
+}
+/*.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as needed 
+    z-index: 1;
+}*/
+.container{
+	z-index: 3;
+}
+
 .header-top {
 	padding-top: 3em;
 }
@@ -666,6 +695,11 @@ h2.resp-accordion {
     word-wrap: break-word;
     margin: 0;
 }
+.error {
+    color:#ef664d;
+    font-size: 0.9em;
+}
+
 
 @media (max-width: 1024px) {
     .about-text {
@@ -755,9 +789,9 @@ text-align: center;
 padding:30px 0;
 }
 .social-icon i{
-	width:40px;
+	width:35px;
 	height:40px;
-	background: url("../images/img-sprite.png") no-repeat 0px 0px;
+	background: url("../images/img-sprite3.png") no-repeat 0px 0px;
 	display:inline-block;
 }
 .social-icon i:hover{
@@ -780,40 +814,52 @@ padding:30px 0;
 	background-position:-40px -40px;
 }
 .social-icon a i.icon3{
-	background-position:-80px 0px;
+	background-position:-75px 0px;
 }
 .social-icon a i.icon3:hover{
-	background-position:-80px -40px;
+	background-position:-75px -40px;
 }
 .social-icon i.icon4{
-	background-position:-120px 0px;
+	background-position:-110px 0px;
 }
 .social-icon a i.icon4:hover{
-	background-position:-120px -40px;
+	background-position:-110px -40px;
 }
 .social-icon i.icon5{
-	background-position:-160px 0px;
+	background-position:-150px 0px;
 }
 .social-icon a i.icon5:hover{
-	background-position:-160px -40px;
+	background-position:-150px -40px;
 }
 .social-icon i.icon6{
-	background-position:-200px 0px;
+	background-position:-183px 0px;
 }
 .social-icon a i.icon6:hover{
-	background-position:-200px -40px;
+	background-position:-183px -40px;
 }
 .social-icon i.icon7{
-	background-position:-240px 0px;
+	background-position:-220px 0px;
 }
 .social-icon a i.icon7:hover{
-	background-position:-240px -40px;
+	background-position:-220px -40px;
 }
 .social-icon i.icon8{
-	background-position:-280px 0px;
+	background-position:-255px 0px;
 }
 .social-icon a i.icon8:hover{
-	background-position:-280px -40px;
+	background-position:-255px -40px;
+}
+.social-icon i.icon9{
+	background-position:-290px 0px;
+}
+.social-icon a i.icon9:hover{
+	background-position:-290px -40px;
+}
+.social-icon i.icon10{
+	background-position:-326px 0px;
+}
+.social-icon a i.icon10:hover{
+	background-position:-326px -40px;
 }
 .contact {
 	padding-bottom:4em;
@@ -822,7 +868,7 @@ border-bottom: 1px solid#55626f;
 .contactgrid {
 padding-bottom: 2em;
 }
-.contactgrid input[type="text"] {
+.contactgrid input[type="text"], .contactgrid input[type="email"], .contactgrid input[type="number"] {
 	width: 100%;
 	background: none;
 	outline: none;
@@ -850,7 +896,7 @@ padding-bottom: 2em;
 .contactgrid2 {
 	padding: 2em 0 0 17em;
 }
-.contactgrid2 input[type="submit"] {
+.contactgrid2 input[type="submit"], .contactgrid2 input[type="reset"]{
 	color: #ef664d;
 	background: none;
 	border: none;
@@ -858,7 +904,7 @@ padding-bottom: 2em;
 	outline: none;
 	text-transform: uppercase;
 }
-.contactgrid2 input[type="submit"]:hover {
+.contactgrid2 input[type="submit"]:hover, .contactgrid2 input[type="reset"]:hover {
 	color: #d5d6d7;
 }
 .footer-bottom {
