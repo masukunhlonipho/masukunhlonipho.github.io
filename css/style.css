@@ -888,7 +888,6 @@ padding-bottom: 2em;
 	border-bottom: 1px solid#d5d6d7;
 	font-size: 15px;
 	color: #d5d6d7;
-	text-transform: capitalize;
 	padding: 10px 0;
 	height: 2.8em;
 }
@@ -901,7 +900,6 @@ padding-bottom: 2em;
 	border: none;
 	font-size:15px;
 	outline: none;
-	text-transform: uppercase;
 }
 .contactgrid2 input[type="submit"]:hover, .contactgrid2 input[type="reset"]:hover {
 	color: #d5d6d7;
